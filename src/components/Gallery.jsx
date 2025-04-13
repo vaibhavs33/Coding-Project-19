@@ -37,7 +37,6 @@ const Gallery = ({ tours, setTours, onRemove }) => {
 
       //Show the error screen if something goes wrong
       setError(true);
-      setLoading(false);
     } finally {
       // Stop showing the loading screen
       setLoading(false);
