@@ -49,6 +49,18 @@ const Gallery = ({ tours, setTours, onRemove }) => {
     fetchTours();
   }, []);
 
+  //Task 4 - Handle loading and error states gracefully
+
+  //If the data is still loading, show "Loading..."
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
+
+  //If there was an error while fetching the data, show an error message
+  if (error) {
+    return <h2>Something went wrong.</h2>;
+  }
+  
   //Task 2 - Fetch and render tour list with useEffect and state
 
   //If there are no tours left, show a message and a button to refresh the tours
