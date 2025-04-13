@@ -23,7 +23,7 @@ function App() {
   return (
     <main>
       {/* App title */}
-      <h1>Tour Explorer</h1>
+      <h1>Our Tours</h1>
       {/* Gallery component displays the tours and tours is the list of tours
         setTours updates the tours list and onRemove removes a tour */}
       <Gallery tours={tours} setTours={setTours} onRemove={removeTour} />
