@@ -5,15 +5,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: beige;
-    color: #333;
+    background-color: dark gray;
+    color: white;
+    justify-content: center;
 }
   
 /* Main content area styles */
 main {
     max-width: 1200px;
-    margin: 2rem auto;
-    padding: 1rem;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
   
@@ -21,21 +22,25 @@ main {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
 }
   
 /* Tour card styles */
 .tour-card {
-    background-color: lightblue;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
+    background-color: orange;;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
     transition: transform 0.3s ease;
-    width: 500px;
     display: flex;
-    flex-direction: column;
+    width: 400px;
+    overflow: hidden; 
     min-height: 400px;
+    flex-direction: column;
+    justify-content: space-between;
 }
   
 /* Tour image styles */
@@ -114,7 +119,7 @@ main {
 }
   
 /* No tours available styles */
-  .no-tours {
+.no-tours {
     padding: 2rem;
     font-size: 1.5rem;
     color: #555;
